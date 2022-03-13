@@ -4,5 +4,7 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   # root "articles#index"
  
-    root "static_pages#index" #<-  "name_controler#name_action" 
+    root 'static_pages#index' #<-  "name_controler#name_action" 
+    get 'sobre', to: 'static_pages#about'
+    get 'contato',to: 'static_pages#contact'
 end

@@ -11,10 +11,14 @@
   </head>
 
   <body>
+  <div class="container">
     <%= render "layouts/header" %> <!-- this add partial codes-->
-
-    <%= yield %>
+    
+    <div class = "d-flex justify-content-center">
+      <%= yield %>
+    </div>
 
     <%= render "layouts/footer" %>
+  <div>
   </body>
 </html>
