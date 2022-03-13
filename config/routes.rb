@@ -8,4 +8,7 @@ Rails.application.routes.draw do
     root 'static_pages#index' #<-  "name_controler#name_action" 
     get 'sobre', to: 'static_pages#about'
     get 'contato',to: 'static_pages#contact'
+
+    resources :contacts
+    resources :users, only: [:new,:create]
 end
