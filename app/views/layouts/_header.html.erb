@@ -3,13 +3,19 @@
     <a class="navbar-brand" href="#"><i class="bi bi-person-lines-fill"></i>  Contact List</a>
     <div class="nav navbar-nav navbar-right" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+      <%if user_signed_in?%>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Login</a>
         </li>
 
         <li class="nav-item">
          <%=link_to "Nova Conta", new_user_path, class:"nav-link"%>
-        </li> 
+        </li>
+
+        <%else%>
+          <%=link_to "Sair", sair_path, method: :delete, class:"nav-link"%>
+        <%end%>
       </ul>
     </div>
   </div>
