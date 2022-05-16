@@ -1,4 +1,4 @@
-![Actions](https://github.com/eemilyy/rails-contact-list/blob/main/.github/workflows/github-actions.yml/badge.svg)
+![Actions](https://github.com/eemilyy/rails-contact-list/.github/workflows/github-actions.yml/badge.svg)
 
 # README
 
